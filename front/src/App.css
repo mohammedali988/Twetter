@@ -1,0 +1,543 @@
+*{
+  box-sizing: border-box;
+  
+}
+
+.back{
+  background-color: #FAFAFA;
+}
+.home{
+  overflow: hidden;
+  width: 1076px;
+  margin:50px auto;
+}
+.home .navbar {
+  position: absolute;
+  width: 1347px;
+  height: 68.31px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+}
+.home .navbar h3{
+  position: absolute;
+  left: 127.54px;
+  top: 4.62px;
+  font-family: Poppins;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  color: #333333;
+}
+.home .navbar .home1 {
+  position: absolute;
+  left: 562.05px;
+  top: 26.31px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  color: #2F80ED;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+}
+.home .navbar .icon1 {
+  position: absolute;
+  width: 31.5px;
+  height: 28.77px;
+  left: 72px;
+  top: 19.69px;
+}
+.home .navbar .explore {
+  position: absolute;
+  left: 683.05px;
+  top: 27.31px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  color: #828282;
+  border: none;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+.home .navbar .bookmarks {
+  position: absolute;
+  left: 811.05px;
+  top: 26.31px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  color: #828282;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+}
+.home .content{
+  float: left;
+  width: 745px;
+  margin-right: 25px;
+  margin-top: 25.89px;
+}
+
+.home .sidebar{
+  float: right;
+  width: 306px;
+  margin-top: 25.98px;
+}
+.home .sidebar .trends {
+  left: 952px;
+  top: 94.29px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+.home .sidebar .trends .top h5 {
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ccc;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 12px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.035em;
+  color: #4F4F4F;
+  padding-left: 0px;
+}
+.home .sidebar .trends .buttom{
+  padding-bottom: 20px;
+}
+.home .sidebar .trends .buttom h4 {
+  padding-left: 20px;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.035em;
+  color: #333333;
+  margin-bottom: -19px;
+}
+.home .sidebar .trends .buttom h5 {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.035em;
+  color: #828282;
+  padding-left: 20px;
+}
+
+.home .sidebar .tofollow {
+  width: 306px;
+  left: 952px;
+  top: 612.01px;
+  margin-top: 22.02px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+.home .sidebar .tofollow h5{
+  font-family: Poppins;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ccc;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 12px;
+  padding-left: 0px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.035em;
+  color: #4F4F4F;
+}
+.home .sidebar .tofollow .photo3 img{
+  margin-left: 20px;
+  margin-top: 7px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+.home .sidebar .tofollow h4{
+  padding-left: 73px;
+  margin-top: -52px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.035em;
+  color: #000000;
+}
+.home .sidebar .tofollow h6{
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.035em;
+  color: #828282;
+  padding-left: 73px;
+  margin-top: -20px;
+}
+.home .sidebar .tofollow button{
+  float: right;
+  background: #2F80ED;
+  margin-top: 20;
+  margin-top: -53px;
+  margin-right: 20px;
+  width: 79px;
+  height: 24px;
+  left: 1158.94px;
+  background: #2F80ED;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.035em;
+
+  color: #FFFFFF;
+}
+.home .sidebar .tofollow p{
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: -0.035em;
+  color: #828282;
+  margin-left: 20px;
+  margin-top: -5px;
+}
+.home .sidebar .tofollow .photo4{
+  margin-left: 20px;
+  height: 115px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+.home .sidebar .tofollow .photo4 img{
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.home .content .forpost {
+  padding: 20px;
+  border-radius: 4px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.home .content .forpost h4{
+  margin: -7px 0 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ccc;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.home .content .forpost .tweet {
+  overflow: hidden;
+
+}
+
+.home .content .forpost .tweet .photo {
+  float: left;
+  width: 40px;
+  height: 45.86px;
+  overflow: hidden;
+  margin-right: 12px;
+
+  left: 202px;
+  top: 139.2px;
+}
+
+.home .content .forpost .tweet .photo img{
+  width: 100%;
+  height: 100%;
+  border-radius:9px ;  
+}
+
+.home .content .forpost .tweet textarea {
+  width: 641px;
+  float: right ;
+  border: none;
+  outline: none;
+  height: 30px;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+.home .content .forpost .tweet1 {
+  overflow: hidden;
+  margin-top: 15px;
+
+}
+
+.home .content .forpost .tweet1 > svg {
+  margin-right: 15px;
+  float: left;
+  color: aqua;
+  margin: 10px;
+}
+
+.home .content .forpost .tweet1 button{
+  float: right;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 81px;
+  height: 32px;
+  background: #2F80ED;
+  color: #FFFFFF;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.035em;
+}
+
+.home .content .forpost .tweet1 h5{
+  float: left;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.035em;
+  color: #2F80ED;
+  margin-block: auto;
+  margin: 10px;
+}
+
+
+.home .content .posts {
+  margin: 53.66px 0 0;
+  width: 745px;
+  /* height: 606px; */
+  left: 182px;
+  top: 303.25px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.home .content .posts .whom .photo1 {
+  /* float: left;
+  overflow: hidden;
+  margin-right: 12px;
+  width: 71.16px;
+  height: 76.74px;
+  left: 182px;
+  top: 303.25px; */
+}
+.home .content .posts .whom img{
+  width: 90%;
+  height: 78%;
+  border-radius: 9px;
+  float: left;
+  overflow: hidden;
+  margin-right: 12px;
+  margin-left: 21px;
+  margin-top: 20px;
+  width: 40px;
+  height: 45.86px;
+}
+
+.home .content .posts .whom .personal h4{
+  margin: 0px 0px -28px;
+  padding-bottom: 12px;
+  padding-top: 20px;
+  height: 48px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.035em;
+} 
+
+.home .content .posts .whom .personal h6{
+  font-family: Noto Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.035em;
+  color: #BDBDBD;
+  margin-bottom: 20px;
+}
+
+.home .content .posts .post {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 36px;
+}
+.home .content .posts .post p{
+  margin-bottom: 19px;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.035em;
+  color: #4F4F4F;
+}
+
+.home .content .posts .post img{
+  border-radius: 9px;
+  width: 705px;
+  height: 328.22px;
+}
+
+.home .content .posts .reaction {
+  overflow: hidden;
+  margin-top: 15px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.home .content .posts .comment .photo2{
+  float: left;
+  overflow: hidden;
+  margin-right: 12px;
+  width: 71.16px;
+  height: 76.74px;
+  left: 182px;
+  top: 303.25px;
+}
+
+.home .content .posts .comment .photo2 img {
+  width: 40px;
+  height: 45.86px;
+  left: 202px;
+  margin-left: 20px;
+  margin-top: 9.39px;
+  border-radius: 8px
+}
+.home .content .posts .comment .input {
+  height: 76.74px;
+  left: 182px;
+  top: 303.25px;
+}
+.home .content .posts .comment .input input {
+  height: 45.86px;
+  margin-top: 9.39px;
+  width: 648.78px;
+  height: 40px;
+  top: 849.86px;
+  background: #FAFAFA;
+  border: 1px solid #F2F2F2;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.home .content .posts .comment .input ::placeholder{
+  color: #BDBDBD;
+  padding: 0 12px;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px
+}
+.home .content .posts .reaction .button1 {
+    width: 164px;
+    height: 41.17px;
+    margin-left: 25.54px;
+    background: #FFFFFF;
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05); */
+    border-radius: 8px;
+    margin-top: 3px;
+    cursor: pointer;
+    border: none;
+}
+
+.home .content .posts .reaction .button1:hover {
+  background: #F2F2F2;
+  color: #4F4F4F;
+}
+
+.home .content .posts .reaction .button2 {
+  width: 164px;
+  height: 41.17px;
+  /* margin-left: 100px; */
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin-top: 3px;
+  cursor: pointer;
+  border: none;
+}
+
+.home .content .posts .reaction .button3 {
+  width: 164px;
+  height: 41.17px;
+  /* margin-left: 50px; */
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin-top: 3px;
+  cursor: pointer;
+  border: none;
+}
+
+.home .content .posts .reaction .button4 {
+  width: 164px;
+  height: 41.17px;
+  /* margin-left: 400px; */
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin-top: 3px;
+  cursor: pointer;
+  border: none;
+}
+
+.home .content .posts .reaction .button2:hover {
+  background: #F2F2F2;
+  color: #4F4F4F;
+}
+.home .content .posts .reaction .button3:hover {
+  background: #F2F2F2;
+  color: #4F4F4F;
+}
+.home .content .posts .reaction .button4:hover {
+  background: #F2F2F2;
+  color: #4F4F4F;
+}
+.home .content .posts .reaction .button4 > svg {
+  margin-right: 10px;
+}
+.home .content .posts .reaction .button1 > svg {
+  margin-right: 10px;
+}
+.home .content .posts .reaction .button2 > svg {
+  margin-right: 10px;
+}
+.home .content .posts .reaction .button3 > svg {
+  margin-right: 10px;
+}

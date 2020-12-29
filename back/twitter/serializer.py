@@ -20,3 +20,8 @@ class userser(serializers.ModelSerializer):
     class Meta:
         model = users
         fields =['userEmali', 'username', 'userPass']
+
+class LogIn (serializers.ModelSerializer):
+    class Meta : 
+        model = users
+        fields = ['username', 'userPass']

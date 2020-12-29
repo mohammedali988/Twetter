@@ -1,7 +1,6 @@
 import { FontAwesomeIcon }  from "@fortawesome/react-fontawesome" ;
 import { faAddressBook } from "@fortawesome/free-solid-svg-icons";
 import  image  from "@fortawesome/free-solid-svg-icons";
-// import "./profile.jpg"
 import Navbar from "../components/navbar";
 import ForTweet from "../components/forTweet";
 import Tweets from "../components/tweets";

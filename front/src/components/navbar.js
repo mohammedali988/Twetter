@@ -6,10 +6,16 @@ function Navbar () {
     return (
     <div className="navbar">
         <FontAwesomeIcon icon={faAddressBook} className="icon1"/>
-        <h3> Tweeter </h3>
-        <button className="home1"> Home </button>
-        <button className="explore"> Explore </button>
-        <button className="bookmarks"> Book Marks </button>
+        <h3> <a href="/">Tweeter</a> </h3>
+        <button className="home1" > 
+            <a href="/"> Home </a>
+         </button>
+        <button className="explore" >
+            <a href="/ex"> Explore </a>
+        </button>
+        <button className="bookmarks">
+            <a href="/boo"> Book Marks </a>
+        </button>
     </div>
     )
 }

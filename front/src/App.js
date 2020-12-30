@@ -16,7 +16,7 @@ function App() {
 
   const store = configureStore({ reducer: appReducer })
 
-  console.log(store.getState(), "hiiiiiiiiiii")
+  console.log(store.getState(), "hii moooooooooooooooo")
   
   return (
     // component ? (

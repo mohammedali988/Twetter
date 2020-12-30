@@ -5,17 +5,18 @@ const state1 = {
     check1: false
 }
 
-
 const appReducer = (state=state1,action) =>{
-    console.log(action.type, 'hereeeeeeeeee')
+    console.log(action.Payload, 'hereeeeeeeeee')
     if(action.type === 'true'){
-        return{
+        state = {
             ...state,
+            name: action.Payload,
             check1 : true
-        } 
-    }
-    else return { state }
+        }
+        console.log(state, "stateeeeeeeeeeeee")
+        return state
+    }else return { state }
 
 }
-
+console.log(state1, "hiiiiiiiiiiiiiiiiii")
 export default appReducer;

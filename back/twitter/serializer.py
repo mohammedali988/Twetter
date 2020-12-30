@@ -1,20 +1,27 @@
 from rest_framework import serializers 
-from .models import tweet, comment, users, test
+from .models import tweet, users,  comm, Photo
 
-class testser(serializers.ModelSerializer):
+# class testser(serializers.ModelSerializer):
+#     class Meta:
+#         model = test
+#         fields = ["photo"] 
+
+
+class Photoser(serializers.ModelSerializer):
     class Meta:
-        model = test
-        fields = ["text"] 
+        model = Photo
+        fields = ["photo1"] 
+
 
 class tweetser (serializers.ModelSerializer):
     class Meta: 
         model = tweet 
-        fields = ['tweet_text', 'tweet_date' ,'tweet_id'] 
+        fields = ['tweet_text','tweet_id'] 
 
 class commentser(serializers.ModelSerializer):
     class Meta :
-        model = comment
-        fields = [ 'comment_text', 'comment_date', 'comment_id']
+        model = comm
+        fields = [ 'comm_text', 'comm_id']
 
 class userser(serializers.ModelSerializer):
     class Meta:
@@ -25,3 +32,5 @@ class LogIn (serializers.ModelSerializer):
     class Meta : 
         model = users
         fields = ['username', 'userPass']
+
+

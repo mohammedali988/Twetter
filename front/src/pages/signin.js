@@ -13,6 +13,7 @@ function SignIn (){
     const[username, setUsername] = useState("");
     const[pass, setPass] = useState('');
     const [component, setComponent] = useState(true);
+    
 ///////////////////////
     const store = configureStore({ reducer: appReducer })
     // console.log("hiiiiiiiiiiii")
@@ -29,7 +30,9 @@ function SignIn (){
         .post ("http://127.0.0.1:8000/login/", user)
         .then( response => {
             if(response.data){
-                store.dispatch({ type: 'true' })
+                store.dispatch({ type: 'true' , Payload : username})
+                
+                // console.log(store.getState())
                 window.location="/"
             }else (alert("maybe username or basswoed not correct try again"))
         }).catch( err => {

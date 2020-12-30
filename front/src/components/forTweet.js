@@ -16,17 +16,14 @@ function ForTweet(){
         e.preventDefault();
         console.log(tweet)
         const data = {
-            // tweet_text: tweet,
-            // tweet_date : "12/9/2020 7:30 pm", 
-            // Tweet_id : 123
-            text : tweet
+            tweet_text : tweet,
+            tweet_id: "Mohammed"
         }
-
         axios
-        .post("http://127.0.0.1:8000/test/" , data)
+        .post("http://127.0.0.1:8000/tweet/" , data)
         .then(response =>{
             if(response.data === true){
-               alert("it os done ") 
+               setTweet('')
             }else {
                 alert("there is some thing wrong")
             }
@@ -41,9 +38,9 @@ function ForTweet(){
                 <h4>Tweet Somthing</h4>
                 <div className="tweet">
                     <div className="photo">
-                        <img src="https://i.pinimg.com/236x/ce/2a/95/ce2a95e99faceaf7af19c273b10ebcc1.jpg"/>
+                        <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"/>
                     </div>
-                    <textarea placeholder="whats happining ?" onChange={onChange}>
+                    <textarea placeholder="whats happining ?" value={tweet} onChange={onChange}>
                     </textarea>
                 </div>
                 <div className="tweet1">

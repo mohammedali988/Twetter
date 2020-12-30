@@ -1,20 +1,25 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from rest_framework.views import APIView 
-from .models import tweet, comment, users, test
-from .serializer import tweetser, commentser, userser,testser, LogIn
+from .models import tweet, users, comm, Photo
+from .serializer import tweetser, userser, LogIn, commentser, Photoser
 from rest_framework.response import Response
 from django.contrib.auth.models import User
 from django.contrib.auth import get_user_model, authenticate
-# from django.contrib.auth import authenticate
 # Create your views here.
 
-class Test(APIView):
-    print("hiiii")
-    serializer_class = testser
+# class Test(APIView):
+#     serializer_class = testser
+#     def post(self, request):
+#         serializer = testser( data= request.data)
+#         if serializer.is_valid(raise_exception=True): 
+#             serializer.save()
+#             return Response(True)
+
+class Photo1(APIView):
+    serializer_class = Photoser
     def post(self, request):
-        serializer = testser( data= request.data)
-        print(serializer)
+        serializer = Photoser( data= request.data)
         if serializer.is_valid(raise_exception=True): 
             serializer.save()
             return Response(True)
@@ -23,7 +28,7 @@ class tweetView(APIView):
 
     serializer_class = tweetser
     def get (self, request):
-        tweets = [ {"tweet_text": tweets.tweet_text,"tweet_date": tweets.tweet_date, "tweet_id":tweets.tweet_id}  
+        tweets = [ {"tweet_text": tweets.tweet_text, "tweet_id":tweets.tweet_id}  
         for tweets in tweet.objects.all()] 
         return Response(tweets)
             
@@ -40,39 +45,17 @@ class commentView(APIView):
     serializer_class = commentser
 
     def get (self, request):
-        comments = [ {"comment_text": comments.comment_text,"comment_date": comments.comment_date, "comment_id":comments.comment_id}  
-        for comments in comment.objects.all()] 
+        comments = [ {"comm_text": comments.comm_text, "comm_id":comments.comm_id}  
+        for comments in comm.objects.all()] 
         return Response(comments)
 
     def post(self,request):
         serializer = commentser(data = request.data)
+        print(request.data, "hereeeeeeeeeeeeeeeeeeeeee")
         if serializer.is_valid(raise_exception=True):
             serializer.save()
             return Response(True)
 
-# class UsersView(APIView):
-#     serializer_class = userser
-
-#     def post(self, request):
-#         serializer = userser(data= request.data)
-#         let = users.objects.filter(username="memo", userPass="memo")
-#         arr = users.objects.all() 
-#         if let[0] in arr :
-#             return Response(True) 
-#         else:
-#             return Response(False)
-
-#     def get (self, request):
-#         user = [ {"username": user.username }  
-#         for user in users.objects.all()]
-#         return Response(user) 
-
-#     def post(self, request):
-#         serializer = userser(data=request.data)
-#         print(request.data)
-#         if serializer.is_valid (raise_exception = True):
-#             serializer.save()
-#             return Response("hi")
 
 class CreateUser (APIView):
     serializer_class = userser
@@ -104,13 +87,17 @@ class LogIn(APIView):
         else:return Response(False)
 
 
+# class forPost(APIView):
+#     serializer_class = postser
+#     def post (self, request):
+#         serializer = postser(data = request.data)
+#         if serializer.is_valid(raise_exception=True):
+#             serializer.save()
+#             return Response(True)
 
-
-
-
-
-        # serializer = LogIn(data=request.data)
-        # print(request.data,"hereeeeeeeeeeeeeeeeeeeeeeeeeeeee")
-        # if User.objects.filter(username=request.data['userEmali']) .exists():
-        #     return Response(True)
-        # return Response(False)
+#     def get(self, request):
+#         posts = [ {"p_post": posts.p_post,"post_id": posts.post_id}  
+#         for posts in post1.objects.all()] 
+#         # for posts in post1.objects.all():
+#         #     print(posts.us.username)
+#         return Response(posts)

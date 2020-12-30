@@ -16,7 +16,7 @@ function SignUp(){
             userPass: pass,
         }
         axios
-        .post("http://127.0.0.1:8000/users/", user)
+        .post("http://127.0.0.1:8000/signup/", user)
         .then( response => {
             if(response){
                 alert(" signUp is done ")

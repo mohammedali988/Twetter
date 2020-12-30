@@ -7,7 +7,7 @@ function Profile(){
     return(
         <div>
             <div className="Pimge" >
-                <img src="https://i.pinimg.com/236x/ce/2a/95/ce2a95e99faceaf7af19c273b10ebcc1.jpg" style={{width:"100%", height:"100%", borderRadius:"8px"}}/>
+                <img src="https://i.pinimg.com/236x/ce/2a/95/ce2a95e99faceaf7af19c273b10ebcc1.jpg" style={{width:"100%", height:"100%", borderRadius:"8px", objectFit:"cover"}}/>
             </div>
             <div className="information">
                 <h3>Mohammed</h3>
